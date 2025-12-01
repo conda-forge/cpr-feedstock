@@ -1,5 +1,5 @@
 {% set name = "cpr" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/libcpr/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c55d805300c224f099cad74ad9c68799f23d005d09ba2df76ead975a3e50e09d
+  sha256: 213ccc7c98683d2ca6304d9760005effa12ec51d664bababf114566cb2b1e23c
   patches:
     # conda-forge's curl uses autotools, so we cannot use cmake COMPONENTS
     - patches/find_package_curl.patch
